@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0px solid #e7e7e7;
+}
+
+li a.left {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 22px 23px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: underline;
+}
+
+li a img{
+    width: 45px;
+    height: 45px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.project-container {
+    position: relative;
+    align-items: center;
+    margin: auto;
+}
+
+header div h2 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+header div h3 {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-col-6 {
+    width: 49.99999%;
+}
+
+.project-image {
+    width: 500px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: none;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20%;
+}
+
+.project-info {
+    padding-top: none;
+    padding-bottom: 20px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.project-name {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.8em;
+    padding-bottom: none;
+}
+
+.description {
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+@media only screen and (max-width: 800px) {
+    .project-col-6 {
+      width: 50%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 1050px) {
+    .project-col-6 {
+      width: 100%;
+    }
+}
