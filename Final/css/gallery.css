@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 0px solid #e7e7e7;
+}
+
+li a.left {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 22px 23px;
+    font-family: 'ABeeZee', sans-serif;
+    text-decoration: underline;
+}
+
+li a img{
+    width: 45px;
+    height: 45px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 50% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 50% center;
+    }
+  }
+
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 5px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 5px;
+}
+
+.content p {
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+    font-family: 'ABeeZee', sans-serif;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+img{
+    border-radius: 3%;
+}
+
+.cropped1 { 
+    width: 200px; /* width of container */
+    height: 250px; /* height of container */
+    object-fit: cover;
+} 
+
+.cropped2 {
+    object-fit: cover;
+    width: 150px; 
+    height: 250px; 
+    overflow: hidden; 
+    object-position: 50% 30%;
+}
+
+.cropped3 {
+    object-fit: cover;
+    width: 150px; 
+    height: 250px; 
+    overflow: hidden; 
+    object-position: 50% 40%;
+}
+
+.cropped4 {
+    object-fit: cover;
+    width: 150px; 
+    height: 400px; 
+    overflow: hidden; 
+    object-position: 50% 40%;
+}
+
+/* Screen adjusting */
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 4000px) {
+    .container {
+        width: 100%;
+    }
+}
