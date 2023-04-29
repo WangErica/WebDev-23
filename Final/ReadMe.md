@@ -1,3 +1,5 @@
+Website Link: https://wangerica.github.io/WebDev-23/Final/index.html
+
 For the midterm, my portfolio website had already the contact page and home page finished.
 The first additions that I made were to make the contact form require some fields, like the name and email. The second addition was to add a favicon for the website. The third addition was to animate the heading for the project page because it was not as engaging. So I decided to let the title go across the page and back, using CSS. The fourth addition was to make a backgroun image for the home page to not make it look too plain, so I decided to find a pastel blue gradient as the background. Lastly, was the biggest change, which was to add a gallery that would filter the photos by their theme. This took a while because of the amount of photos added and how much changes was needed for each image.
 
