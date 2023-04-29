@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gallery</title>
+        <link rel="icon" type="image/x-icon" href="images/glasses.png">
+        <link rel="stylesheet" href="css/gallery.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="left"><img src="images/gallery icon.png" alt="Back to Home Page"></a></li>
+                <li style="float:right"><a href="contact.html">Contact</a></li>
+                <li style="float:right"><a href="gallery.html">Gallery</a></li>
+                <li style="float:right"><a href="project.html">Project</a></li>
+            </ul>
+        </nav>
+
+        <!-- MAIN (Center website) -->
+        <div class="main">
+
+            <h1 class="animate-charcter">Photo Gallery</h1>
+            <hr>
+    
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('portrait')"> Portraits</button>
+                <button class="btn" onclick="filterSelection('landscape')"> Landscape</button>
+                <button class="btn" onclick="filterSelection('scene')"> Scenery</button>
+                <button class="btn" onclick="filterSelection('street')"> Street Photography</button>
+                <button class="btn" onclick="filterSelection('others')"> Others</button>
+            </div>
+    
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/DSC_0049.JPG" class="cropped1" alt="Toddler" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_1683.jpg" class="cropped1" alt="Man" style="width:100%">
+                        <p>New York, New York<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_1678.jpg" class="cropped1" alt="UPS Delivery Man" style="width:100%">
+                        <p>New York, New York<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_1680.jpg" class="cropped1" alt="Gift Store Boss" style="width:100%">
+                        <p>Pier 17, New York<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/DSC_0053.JPG" class="cropped2" alt="Woman" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_1685.jpg" class="cropped3" alt="Baby" style="width:100%">
+                        <p>New York, New York<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_3137.jpg" class="cropped2" alt="Baby" style="width:100%">
+                        <p>New York, New York<br>May 2020</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_3163.jpg" class="cropped2" alt="Baby" style="width:100%">
+                        <p>New York, New York<br>May 2020</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_3878.jpg" class="cropped2" alt="Baby" style="width:100%">
+                        <p>New York, New York<br>November 2020</p>
+                    </div>
+                </div>
+                <div class="column portrait">
+                    <div class="content">
+                        <img src="GalleryIMG/Portrait/IMG_8074.JPG" class="cropped2" alt="USPS Worker" style="width:100%">
+                        <p>New York, New York<br>February 2023</p>
+                    </div>
+                </div>
+    
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/0267.jpg" class="cropped1" style="width:100%">
+                        <p>Chinatown, New York<br>December 2016</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/20161218_163529.jpg" class="cropped1" style="width:100%">
+                        <p>Financial District, New York<br>December 18, 2016</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/20170408_153240.jpg" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>April 8, 2017</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/20170416_144556.jpg" class="cropped1" style="width:100%">
+                        <p>Pier 17, New York<br>April 16, 2017</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/20170520_172823.jpg" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>May 20, 2017</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0036.JPG" class="cropped4" style="width:100%">
+                        <p>St Teresa's Church, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0107.JPG" class="cropped4" style="width:100%">
+                        <p>NorFolk Street, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0116.JPG" class="cropped4" style="width:100%">
+                        <p>New York, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0111.JPG" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0117.JPG"class="cropped1" style="width:100%">
+                        <p>New York, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0121.JPG" class="cropped1" style="width:100%">
+                        <p>Grand Street, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0128.JPG" class="cropped4" style="width:100%">
+                        <p>New York, New York<br>April 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/DSC_0256.JPG" class="cropped4" alt="CN Tower" style="width:100%">
+                        <p>CN Tower, Toronto<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/IMG_6852.jpg" class="cropped4" style="width:100%">
+                        <p>Times Square, New York<br>July 2022</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/DSC_0263.JPG" class="cropped1" style="width:100%">
+                        <p>Oliver Street, New York<br>April 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/APC_0131.JPG" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column landscape">
+                    <div class="content">
+                        <img src="GalleryIMG/Landscape/IMG_8570.JPG" class="cropped1" style="width:100%">
+                        <p>Williamsburg Bridge, New York<br>March 2023</p>
+                    </div>
+                </div>
+                
+    
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/20170416_144622.jpg" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>April 16, 2017</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/20170520_193419.jpg" class="cropped1" style="width:100%">
+                        <p>Secuacus, New Jersey<br>May 20, 2017</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/20170520_203247.jpg" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>May 20, 2017</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/20170812_194651.jpg" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>August 12, 2017</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/DSC_0059.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/DSC_0255.JPG" class="cropped1" style="width:100%">
+                        <p>Toronto, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/DSC_0293.JPG" class="cropped1" style="width:100%">
+                        <p>Chinatown, New York<br>April 2023</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/DSC_0289.JPG" class="cropped1" style="width:100%">
+                        <p>Manhattan Bridge, New York<br>April 2023</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_0431.JPG" class="cropped1" alt="Wall Grafitti" style="width:100%">
+                        <p>Henry Street, New York<br>February 2023</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_0496.JPG" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>May 20, 2018</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_0835.JPG" class="cropped1" style="width:100%">
+                        <p>Fuzhou, China<br>August 2018</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_0836.JPG" class="cropped1" style="width:100%">
+                        <p>Fuzhou, China<br>August 2018</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/20170812_194904.jpg" class="cropped4" style="width:100%">
+                        <p>Quebec City, Montreal<br>August 12, 2017</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_3951.jpg" class="cropped4" style="width:100%">
+                        <p>New York, New York<br>February 2021</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_6850.jpg" class="cropped4" style="width:100%">
+                        <p>Times Square, New York<br>July 2022</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_5518.jpg" class="cropped1" style="width:100%">
+                        <p>Chicago, Illinois<br>January 2022</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_5004.jpg" class="cropped1" style="width:100%">
+                        <p>Met Stadium, New York<br>September 25, 2021</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_3948.jpg" class="cropped1" style="width:100%">
+                        <p>New York, New York<br>February 2021</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_5511.jpg" class="cropped1" style="width:100%">
+                        <p>Chicago, Illinois<br>January 2022</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_5523.jpg" class="cropped1" style="width:100%">
+                        <p>Chicago, Illinois<br>January 2022</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_6583.jpg" class="cropped1" style="width:100%">
+                        <p>Ithaca, New York<br>June 2021</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_7834.jpg" class="cropped1" style="width:100%">
+                        <p>Mississippi<br>January 14, 2023</p>
+                    </div>
+                </div>
+                <div class="column scene">
+                    <div class="content">
+                        <img src="GalleryIMG/Scene/IMG_7842.jpg" class="cropped1" style="width:100%">
+                        <p>Mississippi<br>Janaury 14, 2023</p>
+                    </div>
+                </div>
+                    
+                
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0217.JPG" class="cropped1" alt="Children Playing" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0146.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0122.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0121.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0082.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0060.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0058.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0057.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0056.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/DSC_0042.JPG" class="cropped1" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column street">
+                    <div class="content">
+                        <img src="GalleryIMG/Street/0279.jpg" class="cropped1" style="width:100%">
+                        <p>Chinatown, New York<br>April 2023</p>
+                    </div>
+                </div>
+
+                
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/IMG_6797.jpg" class="cropped1" style="width:100%">
+                        <p>South Street Seaport, New York<br>July 2022</p>
+                    </div>
+                </div>
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/IMG_5541.jpg" class="cropped1" alt="Alligator" style="width:100%">
+                        <p>Chicago, Illinois<br>January 2022</p>
+                    </div>
+                </div>
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/IMG_5538.jpg" class="cropped1" alt="Alligator" style="width:100%">
+                        <p>Chicago, Illinois<br>January 2022</p>
+                    </div>
+                </div>
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/APC_0143.JPG" class="cropped1" style="width:100%">
+                        <p>Williamsburg Bridge, New York<br>April 2023</p>
+                    </div>
+                </div>
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/20170815_152900.jpg" class="cropped1" style="width:100%">
+                        <p>Quebec City, Quebec<br>August 15, 2017</p>
+                    </div>
+                </div>
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/IMG_5608.jpg" class="cropped4" alt="Ferris Wheel" style="width:100%">
+                        <p>Markham, Canada<br>March 2023</p>
+                    </div>
+                </div>
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/IMG_5571.jpg" class="cropped4" style="width:100%">
+                        <p>Chicago, Illinois<br>January 2022</p>
+                    </div>
+                </div>
+                <div class="column others">
+                    <div class="content">
+                        <img src="GalleryIMG/Others/IMG_5566.jpg" class="cropped4" alt="Jellyfish" style="width:100%">
+                        <p>Chicago, Illinois<br>January 2022</p>
+                    </div>
+                </div>
+            <!-- END GRID -->
+            </div>
+    
+            <!-- END MAIN -->
+            </div>
+
+        <script>
+
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+                }
+            }
+    
+            function AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                }
+            }
+    
+            function RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+    
+    
+            
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+            </script>
+    </body>
+</html>
