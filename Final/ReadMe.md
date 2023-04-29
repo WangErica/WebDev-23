@@ -1,4 +1,5 @@
 Website Link: https://wangerica.github.io/WebDev-23/Final/index.html
+
 Link to Google Docs Version of Documentation: https://docs.google.com/document/d/1Eo_sf7K1mD9pdQt2UdrkXkANCLhOfOdbi0955b2IFHo/edit?usp=sharing
 
 For the midterm, my portfolio website had already finished the contact page and home page.
